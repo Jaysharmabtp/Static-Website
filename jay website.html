@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Simple Website</title>
+ 
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .search-icon {
+            font-size: 1.5em;
+            color: #000;
+            cursor: pointer;
+        }
+        #header {
+            background-color: #2ee0ff;
+            padding: 15px 0;
+        }
+        #header .container {
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #header .nav {
+            display: flex;
+            gap: 30px;
+        }
+        #header .nav a {
+            font-size: 1.25rem;
+        }
+        #home, #about, #services, #achievements, #contact {
+            padding: 60px 0;
+        }
+        .section-heading {
+            text-align: center;
+            color: #f3971b;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .section-heading hr {
+            width: 70px;
+            border: 1px solid #000;
+            margin: 10px auto;
+        }
+        .content-container {
+            width: 85%;
+            margin: 0 auto;
+        }
+        #about .content, #services .content, #achievements .content {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        #contact .content {
+            text-align: center;
+        }
+        #contact form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #000;
+            padding: 15px;
+        }
+        #contact form input, #contact form textarea, #contact form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+        }
+        #contact form button {
+            background-color: #f3971b;
+            color: #000;
+            cursor: pointer;
+        }
+        #footer {
+            background-color: #f0f0f0;
+            padding: 30px 0;
+        }
+        #footer .container {
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #footer a {
+            color: #f3971b;
+            font-size: 1.25em;
+        }
+    </style>
+    <div id="header">
+        <div class="container">
+            <div>
+                <span class="fa fa-user-circle" aria-hidden="true"></span>
+                <span style="font-size: 1.5em; color: #000;">Jay Sharma</span>
+            </div>
+            <div class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="content-container" align="center">
+            <h3 style="color: #f3971b; font-size: 25px;">Hi, I'm Jay Sharma</h3>
+            <h2 style="color: #f3971b; font-size: 25px;">Front-end Web Developer</h2>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="content-container">
+            <div class="section-heading">
+                About Me
+                <hr>
+            </div>
+            <div class="content">
+                <div style="flex: 40%;">
+                    <img src="https://futureskillsprime.in//sites/default/files/2021-04/web-development.jpg" alt="Jay Sharma" style="width: 100%; height: auto;">
+                </div>
+                <div style="flex: 60%;">
+                    <h2>I am a passionate Programmer.</h2>
+                    <p>My name is Jay Sharma. I am currently pursuing a B.Tech in Computer Science. I am a front-end developer working at Decipher Zone Private Limited (Gurgaon).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="content-container">
+            <div class="section-heading">
+                Services
+                <hr>
+            </div>
+            <div class="content">
+                <a href="service1.html" style="flex: 2;">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*s80xLYgbrwbXgEuuDBR5mw.jpeg" alt="Service1" style="width: 100%; height: 200px; object-fit: cover;">
+                </a>
+                <a href="service2.html" style="flex: 2;">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221123153249/SkillsRequiredtoBecomeaBackendDeveloper.png" alt="Service2" style="width: 100%; height: 200px; object-fit: cover;">
+                </a>
+                <a href="service3.html" style="flex: 2;">
+                    <img src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg" alt="Service3" style="width: 100%; height: 200px; object-fit: cover;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="achievements">
+        <div class="content-container">
+            <div class="section-heading">
+                Achievements
+                <hr>
+            </div>
+            <div class="content">
+                <div style="flex: 66%; font-size: 35px;">
+                    <ul>
+                        <li>I completed my Degree with an 8.70 CGPA.</li>
+                        <li>I got 5 stars in Python, C++, C, and Problem Solving on HackerRank.</li>
+                        <li>I completed my Senior Secondary Education with 72%.</li>
+                        <li>I am working at Decipher Zone Private Limited, Gurgaon.</li>
+                    </ul>
+                </div>
+                <div style="flex: 40%; text-align: right;">
+                    <img src="https://previews.123rf.com/images/djvstock/djvstock1609/djvstock160900202/62108881-man-boy-glasses-gears-developer-web-responsive-development-website-programming-icon-set-colorful.jpg" alt="Achievements" style="width: 50%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="content-container">
+            <div class="section-heading">
+                Contact
+                <hr style="border-color: #f3971b;">
+            </div>
+            <div class="content">
+                <form>
+                    <div style="margin-bottom: 10px;">
+                        <input type="text" placeholder="Name:" style="width: 100%; padding: 10px; box-sizing: border-box;">
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <input type="email" placeholder="Email:" style="width: 100%; padding: 10px; box-sizing: border-box;">
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <textarea rows="5" placeholder="Message:" style="width: 100%; padding: 10px; box-sizing: border-box;"></textarea>
+                    </div>
+                    <button type="submit" style="background-color: #f3971b; color: white; padding: 10px 20px; border: none; cursor: pointer;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <a href="#header"><span class="fa fa-arrow-circle-up" aria-hidden="true"></span> Top</a>
+            <a href="#"><span class="fa fa-facebook-square" aria-hidden="true"></span> Facebook</a>
+            <a href="#"><span class="fa fa-twitter-square" aria-hidden="true"></span> Twitter</a>
+            <a href="#"><span class="fa fa-instagram" aria-hidden="true"></span> Instagram</a>
+            <a href="#"><span class="fa fa-linkedin-square" aria-hidden="true"></span> LinkedIn</a>
+            <a href="#"><span class="fa fa-youtube-square" aria-hidden="true"></span> YouTube</a
+
